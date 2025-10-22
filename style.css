@@ -1,17 +1,19 @@
 body {
     font-family: Arial, sans-serif;
-    background:linear-gradient(to right, #9c75c9, #7942d1);
-    margin: 20px;
+    background: linear-gradient(to right, #9c75c9, #7942d1);
+    margin: 0;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
 .container {
-    background:linear-gradient(to right, #be9fe7, #ad7bee); 
+    background: linear-gradient(to right, #d3b9f5, #9d67e6); /* Gradiente corregido y mejorado */
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.356);
+    max-width: 800px;
 }
 h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -22,17 +24,20 @@ h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #800080;
     text-align: center;
-    border-top: #4b0082;
+    border-top: 2px solid #4b0082; /* Propiedad corregida */
+    padding-top: 10px;
+}
+.zodiac-list {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
 }
 ol {
     list-style-type: none;
-    background-color: #f9f9f9;
-    padding: 15px;
-    text-decoration: none;
-    border-radius: 10px;
+    padding: 0;
 }
 li {
-    margin: 8px 0;
+    margin-bottom: 25px; /* Espaciado entre signos */
     font-size: 18px;
     color: #6005aac0;
 }
@@ -47,5 +52,18 @@ p {
     font-size: 18px;
     color: #11001d;
     line-height: 1.5;
+}
+img {
+    display: block; /* Para permitir el centrado con márgenes */
+    margin: 15px auto 0 auto; /* Centra la imagen y añade espacio arriba */
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Clase para añadir la línea divisoria al primer signo de cada grupo */
+.group-start {
+    border-top: 2px solid #cecece;
+    margin-top: 15px;
+    padding-top: 15px;
 }
 
